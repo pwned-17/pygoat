@@ -37,7 +37,7 @@
     
 ## A2:Broken Authentication
 
-The main aim of this lab is to login as admin, for that you are gonna exploit the ```lack of rate limiting ```feature in the otp verification flow. You can see that the otp is only of 3 digit(for demo purposes) and the application doesnt have any captcha or restricts number of tries for the otp.
+The main aim of this lab is to login as admin, for that you are gonna exploit the ```lack of rate limiting ```feature in the otp verification flow. You can see that the otp is only 3 digit(for demo purposes) and the application doesnt have any captcha or restricts number of tries for the otp.
 
 Now to send the otp to admins mail you need to figure out the admins mail id. Luckily the admin has left his email id for the developers in the page source. Admins email id ```admin@pygoat.com``` Enter this email in the send otp input box and hit send,you can see that the page says that otp is sent to the email id of the admin. In order to exploit the lack of rate limiting , we can try to Brute-force the 3 digit otp.
 
